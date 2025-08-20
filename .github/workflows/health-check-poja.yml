@@ -40,7 +40,7 @@ jobs:
 
       - name: Connect to Private Codeartifact
         run: |
-          aws codeartifact login --tool pip --repository None --domain None --domain-owner None --region eu-west-3
+          aws codeartifact login --tool pip --repository null --domain null --domain-owner null --region eu-west-3
 
       - run: pip install poja --upgrade
       - run: python -m poja --poja-conf poja.yml --output-dir=. --github-username=${{ secrets.POJA_GH_USERNAME }} --github-token=${{ secrets.POJA_GH_TOKEN }}

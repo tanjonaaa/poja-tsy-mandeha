@@ -15,7 +15,7 @@ concurrency:
   worker_1_reserved_concurrent_executions_nb: null
   worker_2_reserved_concurrent_executions_nb: null
 database:
-  with_database: sqlite
+  with_database: none
 emailing:
   ses_source: noreply@nowhere.com
 gen_api_client:
@@ -33,9 +33,9 @@ general:
   custom_java_env_vars: poja-custom-java-env-vars.txt
   custom_java_repositories: poja-custom-java-repositories.txt
   package_full_name: com.company.base
-  poja_domain_owner: null
-  poja_python_repository_domain: null
-  poja_python_repository_name: null
+  poja_domain_owner: 'null'
+  poja_python_repository_domain: 'null'
+  poja_python_repository_name: 'null'
   with_snapstart: 'false'
 integration:
   with_codeql: 'false'
@@ -45,9 +45,9 @@ integration:
   with_swagger_ui: 'false'
 networking:
   region: eu-west-3
-  ssm_sg_id: null
-  ssm_subnet1_id: null
-  ssm_subnet2_id: null
+  ssm_sg_id: 'null'
+  ssm_subnet1_id: 'null'
+  ssm_subnet2_id: 'null'
   with_own_vpc: 'false'
 scheduled_tasks: null
 testing:
