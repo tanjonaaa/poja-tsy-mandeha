@@ -31,7 +31,7 @@ jobs:
           
           if [ -f "build.gradle" ]; then
             chmod +x gradlew
-            ./gradlew test
+            gradlew test
           elif [ -f "pom.xml" ]; then
             chmod +x mvnw
             ./mvnw test
