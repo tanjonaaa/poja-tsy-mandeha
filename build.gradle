@@ -25,7 +25,7 @@ repositories {
 }
 
 java {
-    group = 'com.company.base'
+    group = 'com.ofr.base'
     sourceCompatibility = '21'
     targetCompatibility = '21'
 }
