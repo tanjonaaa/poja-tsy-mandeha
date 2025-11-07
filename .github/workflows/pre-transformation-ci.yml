@@ -37,6 +37,7 @@ jobs:
             ./mvnw test
           else
             echo "No build tool detected!" >&2
+            echo "outcome=FAILURE" >> $GITHUB_OUTPUT
             exit 1
           fi
           
